@@ -16,30 +16,38 @@ myReset.addEventListener('click', reset);
 
 
 
+
 function spin() {
+    
     anime({
         targets:'div.boxes.two',
         translateY:    
         [
-            {value: 300, duration: 2000},
+            {value: 900, duration: 2000},
             {value: 0, duration: 2000},
             {easing: 'easeInOutExpo'},
         ],
         rotate: '15turn',
         scale: 1,
+        delay: 100,
+        loop: true,
         
        
     }),
     anime({
         targets:'div.boxes.one', 
-        translateY:    
+        translateX:    
         [
-            {value: 400, duration: 1500},
-            {value: 0, duration: 1500},
+            {value: -400, duration: 1500},
+            {value: 0, duration: 2000},
             {easing: 'easeInOutExpo'},
         ],
         rotate: '5turn',
         scale: 1,
+        delay:300,
+        // skew: [10, 0],
+        loop: true,
+        
         
        
     }),
@@ -47,12 +55,14 @@ function spin() {
         targets:'div.boxes.three',
         translateY:    
         [
-            {value: 400, duration: 1000},
-            {value: 0, duration: 1000},
+            {value: -400, duration: 3000},
+            {value: 0, duration: 2000},
             {easing: 'easeInOutExpo'},
         ],
         rotate: '10turn',
         scale: 1,
+        delay: 300,
+        loop: true,
         
        
     }),
@@ -66,6 +76,8 @@ function spin() {
         ],
         rotate: '25turn',
         scale: 1,
+        delay: 0,
+        loop: true,
         
        
     });
