@@ -58,6 +58,12 @@ function spin() {
             {value: 0, duration: 2000},
             {easing: 'easeInOutExpo'},
         ],
+        translateX:    
+        [
+            {value: -200, duration: 2000},
+            {value: 0, duration: 2000},
+            {easing: 'easeInOutExpo'},
+        ],
         rotate: '15turn',
         scale: 1,
         delay: 100,
@@ -90,6 +96,12 @@ function spin() {
             {value: 0, duration: 2000},
             {easing: 'easeInOutExpo'},
         ],
+        translateX:    
+        [
+            {value: 160, duration: 1000},
+            {value: 0, duration: 2000},
+            {easing: 'easeInOutExpo'},
+        ],
         rotate: '10turn',
         scale: 1,
         delay: 300,
@@ -101,8 +113,8 @@ function spin() {
         targets:'div.boxes.four',
         translateX:    
         [
-            {value: 400, duration: 1300},
-            {value: 0, duration: 1000},
+            {value: 400, duration: 1800},
+            {value: 60, duration: 1000},
             {easing: 'easeInOutExpo'},
         ],
         rotate: '25turn',
@@ -122,45 +134,61 @@ function spin() {
 function animation2() {
     anime({
         targets: 'div.boxes.five',   
-        scale:1.5,   
+        scale:0,   
         easing: 'easeInOutExpo',
-        duration:4000,
+        duration:2000,
+        delay:4000,
+        translateX: -50,  
         rotate: {
             value: 360,
-            duration: 1800,
-            easing: 'easeInOutSine'
+            duration: 900,
+            delay:0,
+            easing: 'easeInOutSine', 
+                         
         }          
     });
+    
     anime({
         targets: 'div.boxes.six',   
-        scale:1.5,   
+        scale:0,   
         easing: 'easeInOutExpo',
-        duration:4000,
+        duration:2000,
+        delay:4000,
+        translateY: 50, 
         rotate: {
             value: 360,
-            duration: 1800,
+            duration: 900,
+            delay:1000,
             easing: 'easeInOutSine'
         }          
     });
     anime({
         targets: 'div.boxes.seven',   
-        scale:1.5,   
+        scale:0,   
         easing: 'easeInOutExpo',
-        duration:4000,
+        duration:2000,
+        delay:4000,
+        translateY: 100,
+        translateX:100,
         rotate: {
             value: 360,
-            duration: 1800,
+            duration: 900,
+            delay:2000,
             easing: 'easeInOutSine'
         }          
     });
     anime({
         targets: 'div.boxes.eight',   
-        scale:1.5,   
+        scale:0,   
         easing: 'easeInOutExpo',
-        duration:4000,
+        duration:2000,
+        delay:4000,
+        translateY:-50,
+        translateX:25,
         rotate: {
             value: 360,
-            duration: 1800,
+            duration: 900,
+            delay:3000,
             easing: 'easeInOutSine'
         }          
     });
