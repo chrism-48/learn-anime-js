@@ -13,7 +13,7 @@ body {
 }
 .pageTitle{
     color:red;
-    font-size:10px;
+    font-size:30px;
     font-family: myFont,sans-serif;
     
 }
@@ -28,7 +28,7 @@ body {
     display:flex;
     justify-content:center;
     gap:2em;
-    margin-top:50px;
+    margin-top:30px;
 }
 
 .boxes {
@@ -61,7 +61,7 @@ body {
 .container3 {
     display:flex;
     justify-content:center;
-    margin-top:50px;
+    margin-top:0px;
 }
 
 .pageTitle2{
@@ -75,7 +75,7 @@ body {
     display:flex;
     justify-content:center;
     gap:2em;
-    margin-top:50px;
+    margin-top:0px;
 }
 
 .container4 {
@@ -98,4 +98,41 @@ body {
 
 .eight {
     background-color:yellow;
+}
+
+.nine {
+    background-color:red
+}
+
+.ten {
+    background-color:blue
+}
+
+.eleven {
+    background-color:green
+}
+
+.twelve {
+    background-color:yellow;
+}
+
+.container7{
+    display:flex;
+    justify-content:center;
+    gap:3em;
+    margin-top:0px;
+    padding-bottom:30px;
+}
+
+.container8{
+    display:flex;
+    justify-content:center;
+    gap:2em;
+    margin-top:90px;
+}
+
+.container6{
+    display:flex;
+    justify-content:center;
+    margin-top:0px;
 }
